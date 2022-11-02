@@ -22,6 +22,8 @@ module SessionsHelper
     end
   end
 
+  # 渡されたユーザーがカレントユーザーであればtrueを返す
+  # userがnilの対策にuser && user
   def current_user?(user)
     user && user == current_user
   end
